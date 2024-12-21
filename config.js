@@ -16,9 +16,9 @@ const DEBUG = convertToBool(process.env.DEBUG, 'true');
 
 module.exports = {
   VERSION: 'v4.4.4',
-  SESSION_ID: process.env.SESSION_ID || '',
-  MODE: (process.env.MODE || 'private').toLowerCase(),
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  SESSION_ID: process.env.SESSION_ID || 'HP_2024_DEC_21_2INV64',
+  MODE: (process.env.MODE || 'public').toLowerCase(),
+  HANDLERS: (process.env.PREFIX || '^[#]').trim(),
   SEND_READ: toBool(process.env.READ_COMMAND),
   READ_MSG: toBool(process.env.READ_MSG),
   MSG_LOG: convertToBool(process.env.LOG_MSG),
@@ -34,7 +34,7 @@ module.exports = {
   STICKER_DATA: process.env.STICKER_DATA || 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ',
   ERROR_MESSAGE: toBool(process.env.ERROR_MESSAGE, 'true'),
   SONG_THUMBNAIL: toBool(process.env.SONG_THUMBNAIL),
-  WARN: process.env.WARN || '4',
+  WARN: process.env.WARN || '3',
   REJECT_CALL: toBool(process.env.REJECT_CALL),
   KOYEB_API_KEY: process.env.KOYEB_API_KEY || false,
   KOYEB_APP_NAME: process.env.KOYEB_APP_NAME || '',
